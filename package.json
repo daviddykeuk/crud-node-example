@@ -4,7 +4,8 @@
     "description": "Nebulr reference implementation of a CRUD service with multiple implementations",
     "main": "index.node.js",
     "scripts": {
-        "test": "mocha ./test/*/*.spec.js"
+        "test:lint": "eslint ./src/**",
+        "test:unit": "mocha ./test/unit/*/*.spec.js"
     },
     "keywords": [
         "nebulr",
@@ -17,5 +18,8 @@
     "license": "ISC",
     "dependencies": {
         "joi": "^13.1.2"
+    },
+    "devDependencies": {
+        "eslint": "^4.18.2"
     }
 }

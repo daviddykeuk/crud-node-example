@@ -1,19 +1,19 @@
 exports.get = (id, next) => {
-    next()
-}
+	next();
+};
 
 exports.getAll = (next) => {
-    next()
-}
+	next();
+};
 
 exports.create = (contact, next) => {
-    next()
-}
+	next();
+};
 
 exports.update = (id, contact, next) => {
-    next()
-}
+	next();
+};
 
 exports.delete = (id, next) => {
-    next()
-}
+	next();
+};
