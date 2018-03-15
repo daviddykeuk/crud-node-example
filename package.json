@@ -1,0 +1,21 @@
+{
+    "name": "crud-node",
+    "version": "1.0.0",
+    "description": "Nebulr reference implementation of a CRUD service with multiple implementations",
+    "main": "index.node.js",
+    "scripts": {
+        "test": "mocha ./test/*/*.spec.js"
+    },
+    "keywords": [
+        "nebulr",
+        "microservices",
+        "lambda",
+        "aws",
+        "reference"
+    ],
+    "author": "David Dyke (david.dyke@nebulr.com.au)",
+    "license": "ISC",
+    "dependencies": {
+        "joi": "^13.1.2"
+    }
+}
