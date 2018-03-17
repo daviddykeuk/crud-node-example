@@ -1,37 +1,38 @@
 {
-    "name": "crud-node",
-    "version": "1.0.0",
-    "description": "Nebulr reference implementation of a CRUD service with multiple implementations",
-    "main": "index.node.js",
-    "scripts": {
-        "start": "node index.node.js",
-        "test": "npm-run-all test:*",
-        "test:lint": "eslint ./src/** --fix",
-        "test:unit": "mocha ./test/unit/*/*.spec.js",
-    },
-    "keywords": [
-        "nebulr",
-        "microservices",
-        "lambda",
-        "aws",
-        "reference"
-    ],
-    "author": "David Dyke (david.dyke@nebulr.com.au)",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.18.2",
-        "dotenv": "^5.0.1",
-        "express": "^4.16.3",
-        "joi": "^13.1.2",
-        "morgan": "^1.9.0"
-    },
-    "devDependencies": {
-        "eslint": "^4.18.2",
-        "flags": "^0.1.3",
-        "fs": "0.0.1-security",
-        "istanbul": "^0.4.5",
-        "mocha-junit-reporter": "^1.15.0",
-        "npm-run-all": "^4.1.2",
-        "nyc": "^11.2.1"
-    }
+  "name": "crud-node",
+  "version": "1.0.0",
+  "description": "Nebulr reference implementation of a CRUD service with multiple implementations",
+  "main": "index.node.js",
+  "scripts": {
+    "start": "node index.node.js",
+    "test": "npm-run-all test:*",
+    "test:lint": "eslint ./src/** --fix",
+    "test:unit": "mocha ./test/unit/*/*.spec.js"
+  },
+  "keywords": [
+    "nebulr",
+    "microservices",
+    "lambda",
+    "aws",
+    "reference"
+  ],
+  "author": "David Dyke (david.dyke@nebulr.com.au)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "joi": "^13.1.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "flags": "^0.1.3",
+    "fs": "0.0.1-security",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.4",
+    "mocha-junit-reporter": "^1.15.0",
+    "npm-run-all": "^4.1.2",
+    "nyc": "^11.2.1"
+  }
 }
