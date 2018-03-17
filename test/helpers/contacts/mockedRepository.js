@@ -18,7 +18,7 @@ exports.create = (contact, next) => {
 };
 
 exports.update = (id, contact, next) => {
-	if (contact.id == "1234567890123456") {
+	if (id == "1234567890123456") {
 		next(null, helpers.existingContact());
 	} else {
 		next(new Error("Contact not found"));

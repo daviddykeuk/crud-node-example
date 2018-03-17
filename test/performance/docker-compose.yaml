@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  dynamodb:
+    image: dwmkerr/dynamodb:latest
+  contacts-crud:
+    build: ../../.
+    ports:
+     - "8080:8080"
+    environment:
+      - DATASOURCE=DYNAMODB
+        DYNAMODB_HOST=dynamodb:8080
+    depends_on: 
+      - dynamodb

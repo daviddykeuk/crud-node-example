@@ -1,2 +1,8 @@
 # Node modules folder
 node_modules
+
+# environment variables
+.env
+
+# performance results
+performance.results.json

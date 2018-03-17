@@ -1,0 +1,27 @@
+config:
+  target: 'http://localhost:8080'
+  phases:
+    - duration: 10
+      arrivalRate: 1
+    - duration: 50
+      arrivalRate: 1
+      rampTo: 50
+  defaults:
+    headers:
+      user_id: 'abcdefgh12345678'
+      content-type: 'application/json'
+scenarios:
+  - name: "Add, reference and delete"
+    flow:
+      - post:
+          url: "/contacts"
+          body: '{"first_name":"First","last_name":"Last","email":"first@last.com"}'
+          capture:
+            json: "$.id"
+            as: "id"
+      - think: 1
+      - get:
+          url: "/contacts/{{ id }}"
+      - think: 1
+      - delete:
+          url: "/contacts/{{ id }}"

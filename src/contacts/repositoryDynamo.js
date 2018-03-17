@@ -2,7 +2,7 @@ exports.get = (id, next) => {
 	next();
 };
 
-exports.getAll = (next) => {
+exports.getByUserID = (user_id, next) => {
 	next();
 };
 
